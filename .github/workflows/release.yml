@@ -5,8 +5,8 @@ on:
     tags: [ '*.*.*-*' ]
 
 jobs:
-  build:
-    name: Build and test library
+  release:
+    name: Prepare GitHub release
     uses: zig-devel/.infra/.github/workflows/release.yml@main
     permissions:
       contents: write
