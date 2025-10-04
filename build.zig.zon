@@ -1,0 +1,20 @@
+.{
+    .name = .lz4,
+    .version = "1.10.0-0",
+    .fingerprint = 0x4ae88e9f8f3d03db, // Changing this has security and trust implications.
+    .minimum_zig_version = "0.15.1",
+    .dependencies = .{
+        .lz4 = .{
+            .url = "https://github.com/lz4/lz4/archive/refs/tags/v1.10.0.tar.gz",
+            .hash = "N-V-__8AAPaNGQD6bmfRjArvYAnsL8DYxbXiNxVE_B6HRpUx",
+        },
+    },
+    .paths = .{
+        "LICENSES/",
+        "REUSE.toml",
+        "README.md",
+        "tests.zig",
+        "build.zig",
+        "build.zig.zon",
+    },
+}
