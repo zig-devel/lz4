@@ -1,0 +1,12 @@
+name: Prepare GH release
+
+on:
+  push:
+    tags: [ '*.*.*-*' ]
+
+jobs:
+  build:
+    name: Build and test library
+    uses: zig-devel/.infra/.github/workflows/release.yml@main
+    permissions:
+      contents: write
